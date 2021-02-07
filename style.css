@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  transition: background-image 1s ease-in-out;
+  color: white;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  align-self: flex-start;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 10px;
+}
+.btn:hover {
+  filter: grayscale(0.2);
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(1.02);
+}
+.city {
+  min-width: 10px;
+  border: solid 1px white;
+}
+#time {
+  font-size: 6rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+span {
+  display: inline-block;
+  min-width: 5px;
+}
+
+.quote {
+  font: 1.2rem Georgia, serif;
+  margin: 0;
+  color: white;
+  padding: 1em;
+  border-radius: 1em;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  #time {
+    font-size: 4rem;
+  }
+}
